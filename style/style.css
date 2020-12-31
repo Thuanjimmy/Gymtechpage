@@ -1,0 +1,127 @@
+
+body{
+  min-width: 290px;
+  line-height: 1.1;
+} 
+  header{
+    font-size: 1em;
+    font-weight: bold;
+    
+  }
+  
+
+  #navbar {
+    font-size: 25px;
+    position: fixed;
+    width: 300px;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: solid; 
+  }
+  #navbar header{
+    font-size: 2em;
+    background-color: grey;
+    text-align: center;
+  }
+  #navbar a {
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+  }
+  #navbar a:hover{
+    color: blue;
+  }
+   #navbar li{
+    list-style: none;
+    padding: 10px;
+    border-top: 1px solid;
+    cursor: pointer;
+    width: 100%;
+  }
+    #navbar ul{
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  #main-doc {
+    margin-left: 280px;
+    position: absolute;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  #main-doc header {
+      color: black;
+      margin: 10px;
+      text-align: left;
+      font-size: 1.9em;
+      font-weight: thin;
+    }
+  p{
+      margin-left: 20px;
+  }
+  .shoulder{
+      width: 250px;
+      height: 200px;
+      margin: auto;
+      
+  }
+  #pictures{
+      display: flex;
+  }
+  code{
+    display: block;
+    text-align: left;
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+    background-color: silver;
+  }
+  @media (max-width: 815px) {
+
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 350px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
+  @media (max-height: 100px){
+    p{
+      font-size: 20px;
+    }
+  }
+
+  
